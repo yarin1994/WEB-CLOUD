@@ -1,0 +1,234 @@
+*{margin: 0; padding: 0;}
+
+#wrapper{
+    width: 1000px;
+    margin: 0 auto;  
+}
+header , main , aside , footer {
+    display: block;
+}
+li{
+    list-style: none;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    width: 1000px;
+    margin-top: 0px;
+    height: 99px;
+    background-color: white;
+}
+header > section{
+    position: relative;
+    left: 456px;
+    top: 18px;   
+}
+.main_layout{
+    float: left;
+    width: 812px;
+    height: 835px;
+    background-color: #1d3557;
+}
+div > aside{ 
+    float: left;
+    width: 188px;
+    height: 835px;
+    background-color: #457b9d;
+}
+#list1 a{
+    position: relative;
+    top: 10px;
+    left: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 10px;
+}
+body{
+    background: url(/images/Slice.jpg) repeat-x;
+    background-attachment: fixed;    
+    overflow-x: hidden;
+}
+#box1{
+   position: relative;
+    width: 413px;
+    height: 288px;
+    background: #a8dadc;
+    left: 353px;
+    top: 21px;
+}
+#box2{
+    position: relative;
+    width: 179px;
+    height: 301px;
+    background: #a8dadc;
+    top: -199px;
+    left: 21px;
+}
+#box3{
+    position: relative;
+    width: 179px;
+    height: 301px;
+    background: #a8dadc;
+    top: -140px;
+    left: 282px;
+}
+footer{
+    position: fixed;
+    height: 66px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #3F3F3F;
+    clear: both;
+}
+/*layout1 related*/
+.slice{
+    background: url(/images/layout1_slice.jpg) repeat-x;
+    height: 183px;
+}
+.big_lay{
+    float: left;
+    height: 651px;
+    width: 842px;
+    background: #e76f51;
+}
+#list2 li{
+    display: inline;
+}
+#list2 a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;    
+    margin-right:10px;  
+    top: 160px;
+    left: 158px;
+}
+article > aside{
+    float: left;
+    width: 158px;
+    height: 651px; 
+    background: #f4a261;
+}
+.box4{
+    position: relative;
+    width: 123px;
+    height: 87px;
+    background-color: #264653;
+    left: 473px;
+    top:67px;
+}
+#mar_right{
+    margin-left: 166px;
+    top: -20px;
+}
+#box5{
+    position: relative;
+    width: 268px;
+    height: 112px;
+    left: 60px;
+    top: 258px;
+    background-color: #264653;
+}
+#box6{
+    position: relative;
+    width: 413px;
+    height: 288px;
+    left: 345px;
+    top: -30px;
+    background-color: #264653;
+}
+/*layout 2 related*/
+.slice2{
+    height: 162px;
+   background: url(/images/layout2_slice.jpg);
+}
+#list3 a{
+    position: relative;
+    margin-top: 4px;
+    font-size: 18px;
+    left: 475px;
+    color: black;
+    display: block;
+}
+main{
+    min-height: 35px;
+    margin-top: -1px;
+    background-color: #fafaee;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+main > article{
+    height: 314px;
+    width: 204px;
+    margin: 48px 57px;
+    background-color: #a8dadc;
+}
+button{
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+@media (max-width: 800px) {   
+    body{
+        background-color: black;
+    }
+    nav , main , header {
+        margin: -1px auto;
+        width: 600px;   
+    }
+    #list3{
+       position: relative;
+       right: 230px;
+       bottom: 30px;
+    }
+    button{
+        position: relative;
+        bottom: 44px;
+    }
+    nav > span{
+        position: relative;
+        background: transparent;
+        left: 250px;
+        top: 5px;
+    }
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #wrapper{
+        width: 600px;
+    }
+    header > section{
+        left: 259px;    
+    }
+    main > article {
+        margin: 46px 48px;
+    }
+    footer{
+        position: fixed;
+        margin: 0 auto;
+        width: 100%;   
+    }
+}
+@media (min-width: 800px) and (max-width: 1930px) {
+    #wrapper, main, header , footer {
+        width: 1000px;
+    }
+    nav > span{
+        display: none;
+    }
+    footer{
+        width: 100%;
+    }
+}
+ 
