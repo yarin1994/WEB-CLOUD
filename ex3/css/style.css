@@ -43,12 +43,12 @@ div > aside{
     left: 5px;
     text-decoration: none;
     color: black;
-    font-size: 15px;
+    font-size: 18px;
     display: block;
     margin-bottom: 10px;
 }
 body{
-    background: url(/images/Slice.jpg) repeat-x;
+    background: url(/ex3/images/Slice.jpg) repeat-x;
     background-attachment: fixed;    
     overflow-x: hidden;
 }
@@ -60,7 +60,7 @@ body{
     left: 353px;
     top: 21px;
 }
-#box2{
+.boxes2-3{
     position: relative;
     width: 179px;
     height: 301px;
@@ -69,10 +69,6 @@ body{
     left: 21px;
 }
 #box3{
-    position: relative;
-    width: 179px;
-    height: 301px;
-    background: #a8dadc;
     top: -140px;
     left: 282px;
 }
@@ -85,9 +81,9 @@ footer{
     background-color: #3F3F3F;
     clear: both;
 }
-/*layout1 related*/
+/*-----------------layout1 related---------------------*/
 .slice{
-    background: url(/images/layout1_slice.jpg) repeat-x;
+    background-color: #e9c46a;
     height: 183px;
 }
 .big_lay{
@@ -144,8 +140,8 @@ article > aside{
 }
 /*layout 2 related*/
 .slice2{
-    height: 162px;
-   background: url(/images/layout2_slice.jpg);
+   height: 162px;
+   background: url(/ex3/images/layout2_slice.jpg);
 }
 #list3 a{
     position: relative;
@@ -179,10 +175,7 @@ button{
     border-radius: 5px;
 }
 @media (max-width: 800px) {   
-    body{
-        background-color: black;
-    }
-    nav , main , header {
+   #wrapper, nav , main , header {
         margin: -1px auto;
         width: 600px;   
     }
@@ -205,9 +198,6 @@ button{
         display: flex;
         flex-wrap: wrap;
     }
-    #wrapper{
-        width: 600px;
-    }
     header > section{
         left: 259px;    
     }
@@ -221,14 +211,8 @@ button{
     }
 }
 @media (min-width: 800px) and (max-width: 1930px) {
-    #wrapper, main, header , footer {
-        width: 1000px;
-    }
-    nav > span{
+     nav > span{
         display: none;
-    }
-    footer{
-        width: 100%;
     }
 }
  

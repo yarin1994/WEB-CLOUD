@@ -21,6 +21,7 @@ function initialize() {
     first[0].onmouseout = function () {
         first[0].style.backgroundImage = "none";
     };
+
 };
 
 function color_change() {
@@ -38,5 +39,4 @@ function color_change_back() {
         box[i].style.backgroundColor = "#a8dadc";
     }
 };
-
 
