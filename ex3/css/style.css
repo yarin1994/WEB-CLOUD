@@ -48,7 +48,7 @@ div > aside{
     margin-bottom: 10px;
 }
 body{
-    background: url(/ex3/images/Slice.jpg) repeat-x;
+    background: url(../images/Slice.jpg) repeat-x;
     background-attachment: fixed;    
     overflow-x: hidden;
 }
@@ -60,7 +60,7 @@ body{
     left: 353px;
     top: 21px;
 }
-.boxes2-3{
+.box2{
     position: relative;
     width: 179px;
     height: 301px;
@@ -68,7 +68,11 @@ body{
     top: -199px;
     left: 21px;
 }
-#box3{
+.box3{
+    position: relative;
+    width: 179px;
+    height: 301px;
+    background: #a8dadc;
     top: -140px;
     left: 282px;
 }
@@ -141,7 +145,7 @@ article > aside{
 /*layout 2 related*/
 .slice2{
    height: 162px;
-   background: url(/ex3/images/layout2_slice.jpg);
+   background: url(../images/layout2_slice.jpg);
 }
 #list3 a{
     position: relative;

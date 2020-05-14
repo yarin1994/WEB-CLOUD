@@ -1,4 +1,4 @@
-function initialize() {
+(function initialize() {
     var articles = "";
     var my_name = "yarinMizrahi";
     var my_length = my_name.length;
@@ -10,19 +10,10 @@ function initialize() {
 
     var main = document.getElementsByTagName("main")[0];
     main.innerHTML = articles;
-    var first = document.getElementsByTagName('article');
+    
+    (first_letter());
 
-    first[0].onmousemove = function () {
-
-        first[0].style.backgroundImage = "url('./images/Y_letter.jpg')";
-
-    };
-
-    first[0].onmouseout = function () {
-        first[0].style.backgroundImage = "none";
-    };
-
-};
+}())
 
 function color_change() {
     var box = document.getElementsByTagName('article');
@@ -40,3 +31,16 @@ function color_change_back() {
     }
 };
 
+function first_letter(){
+    var first = document.getElementsByTagName('article');
+
+    first[0].onmousemove = function () {
+
+        first[0].style.backgroundImage = "url('../ex3/images/Y_letter.jpg')";
+
+    };
+
+    first[0].onmouseout = function () {
+        first[0].style.backgroundImage = "none";
+    };
+}
