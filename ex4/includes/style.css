@@ -1,0 +1,233 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+html, body, div, span ,
+h1, p{
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  background: rgb(111, 107, 107);
+  font-family:tahoma;
+}
+.container {
+  width: 20%;
+  float: right;
+  margin-right: 15%;
+}
+main{
+  display: flex;
+  justify-content: center;
+}
+
+label {
+    font-size: 15px;
+    color: #625D5D;
+}
+.my_form select {
+  padding:6px 10px;
+  width: 70px;
+  color: #777777;
+}
+.my_form textarea {
+  height: 50px;
+  padding: 10px;
+  color: #C9C9C9;
+}
+
+.my_form {
+  position: relative;
+  padding: 20px 20px 20px;
+  background: #FFCC66;
+  border-radius: 3px;
+  box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.my_form h1 {
+  margin: -20px -20px 0;
+  line-height: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  color:#414141;
+  text-align: center;
+}
+
+.my_form p.submit {
+  margin-top:20px;
+  text-align: center;
+}
+
+input[type=text], input[type=password],input[type=email],input[type=url],input[type=tel],input[type=number],.my_form select, textarea {
+  margin: 5px;
+  padding: 0 10px;
+  height: 34px;
+  color: #404040;
+  background: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+  border-radius:3px;
+  outline:3px solid rgba(200, 105, 137, 0.09);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+  margin:10px 0;
+  width: 290px;
+}
+input[type=checkbox]{
+
+  padding: 0 10px;
+  height: 10px;
+  color: #404040;
+  background: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+  border-radius:3px;
+  outline:3px solid rgba(200, 105, 137, 0.09);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+  margin:10px 0;
+  
+}
+input[type=checkbox],input[type=radio]{
+  margin-left: 100px;
+  
+}
+select[name=age]{
+  margin-left: 55px;
+  width: 100px;
+}
+input[type=number]{
+  margin-left: 40px;
+  width: 100px;
+  margin-right: 20px;
+}
+
+input[type=text]:focus, input[type=password]:focus,input[type=email]:focus,input[type=url]:focus,input[type=tel]:focus{
+  border-color:#FFF7F9;
+  outline-color:rgba(254, 225, 235, 0.7);
+  outline-offset: 0;
+}
+
+
+input[type=submit] {
+  text-align: center;
+  padding:0 10px;
+  height: 40px;
+  font-size: 36px;
+  font-weight: bold;
+  color:#FFFFFF;
+  text-shadow:0 1px #3F3C3C;
+  border-width: 1px;
+  border-style: solid;
+  border-color:#3F3C3C;
+  border-radius: 7px 7px 7px 7px;
+  outline: none;
+  box-sizing: content-box;
+  background-color: #615D5D;
+  box-shadow:0 1px #AFADAD inset, 0 1px 2px #807F7F;
+}
+.error{
+  color:red;
+}
+
+/*------fire-----*/
+
+.fire-body {
+  width: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.mo-fire {
+  width: 600px;
+  height: auto;
+  position: absolute;
+  left:10%;
+  margin-left: -100px;
+}
+.mo-fire svg {
+  width: 100%;
+  height: auto;
+  position: relative
+}
+.flame {
+  animation-name: flamefly;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  transform-origin: 50% 50% 0;
+}
+.flame.one {
+  animation-delay: 1s;
+  animation-duration: 3s;
+}
+.flame3.two{
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+
+.flame-main {
+  animation-name: flameWobble;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.flame-main.one {
+  animation-duration: 4s;
+  animation-delay: 1s;
+}
+.flame-main.two {
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+.flame-main.three {
+  animation-duration: 2.1s;
+  animation-delay: 3s;
+}
+.flame-main.four {
+  animation-duration: 3.2s;
+  animation-delay: 4s;
+}
+.flame-main.five {
+  animation-duration: 2.5s;
+  animation-delay: 5s;
+}
+@keyframes flameWobble {
+  50% {
+    transform: scale(1,1.2) translate(0, -30px) rotate(-2deg);
+  }
+}
+@keyframes flamefly {
+  0%{
+    transform: translate(0) rotate(180deg);
+  }
+   50% {
+     opacity: 1;
+  }
+  100% {
+    transform: translate(-20px, -100px) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+.neon {
+  left:5%;
+  margin-top:5%;
+  position: absolute;
+  font-size: 50px;
+  color: #fff;
+  text-shadow:
+    0 0 5px #FD8700,
+    0 0 10px #FD8700,
+    0 0 20px #FD8700,
+    0 0 40px #FD8700,
+    0 0 80px #FD8700,
+    0 0 90px #FD8700,
+    0 0 100px #FD8700,
+    0 0 150px #FD8700;
+}
