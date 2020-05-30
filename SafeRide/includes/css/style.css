@@ -49,7 +49,7 @@ h4{
     display: flex;
 }
 #logo{
-    background-image: url(/includes/images/logo1.png);
+    background-image: url(../images/logo1.png);
     background-repeat: no-repeat;
     display: block;
     position: relative;
@@ -57,7 +57,7 @@ h4{
     right: 29px;
 }
 .scooterpool{
-    background-image: url(/includes/images/scooterpool.png);
+    background-image: url(../images/scooterpool.png);
     background-repeat: no-repeat;
     opacity: 70%;
     padding: 5px 49px;
@@ -74,21 +74,21 @@ h4{
 
 /*-------------------------------------INDEX PAGE-----------------------------------------------------*/
 #wind{
-    background-image: url('/includes/images/wind.png');
+    background-image: url('../images/wind.png');
     background-repeat: no-repeat;
     background-position: center; 
     border: none;
     height: 55px;
 }
 #lime{
-    background-image: url(/includes/images/lime.png);
+    background-image: url('../images/lime.png');
     background-repeat: no-repeat;
     background-position: center; 
     border: none;
     height: 55px;
 }
 #bird{
-    background-image: url('/includes/images/bird.png');
+    background-image: url('../images/bird.png');
     background-repeat: no-repeat;
     background-position: center; 
     border: none;
@@ -123,7 +123,7 @@ h4{
     margin:auto 18px;
 }
 .logoscooter{
-    background-image: url(/includes/images/form_logo.png);
+    background-image: url(../images/form_logo.png);
     background-repeat: no-repeat;
     position: absolute;
     width: 670px;
@@ -135,7 +135,7 @@ h4{
 
 /* -----------------------------------VENDORS PAGE------------------------------------------------------------ */
 #scooter_kick{
-    background-image: url(/includes/images/kick-scooter.png);   
+    background-image: url(../images/kick-scooter.png);   
     background-repeat: no-repeat;
     height: 101px;
     width: 115px;
@@ -492,7 +492,7 @@ input[type="radio"]
 @media (max-width: 480px)
 {
     main{
-        margin-left:14%;
+        margin-left:5%;
     }
     .headline{
         margin-top: 110px;
@@ -570,7 +570,7 @@ input[type="radio"]
         z-index: 2;
     }
     #mobile_logo{
-        background-image: url("/includes/images/mobile_logo.png");
+        background-image: url("../images/mobile_logo.png");
         background-repeat: no-repeat;
         width: 154px;
         position: absolute;
@@ -585,6 +585,8 @@ input[type="radio"]
      .filter {
         position: relative;
         top: 0px;
+        left: 7%;
+
     }
   .index_top_space{
     margin-top: 0px;
@@ -599,7 +601,7 @@ input[type="radio"]
        margin-top: 160px;
    }
    .checkbox > label{
-    margin:auto 7px;
+    margin:auto 4px;
 }
 #all_button{
     background: #653894;
@@ -613,7 +615,7 @@ input[type="radio"]
     margin-left: 6%;
     width: 265px;
 }
-#logoscooter{
+.logoscooter{
     display: none;
 }
 }
