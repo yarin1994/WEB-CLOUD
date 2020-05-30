@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeRide - Form</title>
+    <link rel="stylesheet" href="/includes/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f074fb489b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="mobile_header">
+        <div class="mobile-menu">
+            <input type="checkbox" class="hidden-toggle">
+            <div class="toggle">
+                <a href="#"><i class="fa"></i></a>
+            </div>
+
+            <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Scooter Pool</a></li>
+                <li><a href="#">My Rank</a></li>
+                <li><a href="#">Rewards & Bonuses</a></li>
+                <li><a href="#">Payments</a></li>
+                <li><a href="#">Report an Hazard</a></li>
+                <li><a href="./form.html">Add new scooter</a></li>
+                <li><a href="./vendor_list.html">My inventory</a></li>
+            </ul>
+        </div>
+        <a href="./index.html"><div id="mobile_logo"></div></a>
+    </header>
+    <div class="flex-container">
+        <main>
+            <form id="form_location" class="form-horizontal" method="GET" action="./vendor_list.html">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="serialnumber">Serial number:</label>
+                    <div class="col-sm-10">
+                        <input type="serialnumber" class="form-control" id="serial" placeholder="Enter serial number" pattern="^[A-Z0-9]{5}" >
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="kind">Brand:</label>
+                    <div class="col-sm-10">
+                        <input type="brand" class="form-control" id="kind" placeholder="Enter brand">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="kind">City:</label>
+                    <div class="col-sm-10">
+                        <input type="city" class="form-control" id="city" placeholder="Enter City" pattern="^[A-Z][a-z]+\s+[a-zA-Z\s]+">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox" >Helmet:
+                            <label><input name="helmet[]" type="checkbox"> Yes</label>
+                            <label><input name="helmet[]" type="checkbox"> No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">Status:
+                            <label><input name="status[]" type="checkbox"> New</label>
+                            <label><input name="status[]" type="checkbox"> Used</label>
+                            <label><input name="status[]" type="checkbox"> Need repair</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button id="all_button" type="submit" class="btn btn-default">Submit</button>
+                    </div>
+                </div>
+            </form>
+            <div class="logoscooter"></div>
+        </main>
+        <aside class="left_aside">
+
+            <nav>
+                <ul>
+                    <a id="logo" href="./index.html"></a>
+                    <li><a class="scooterpool" href="#">Scooter pool</a></li>
+                    <li><a href="#"><i class="fas fa-star"></i>My rank</a></li>
+                    <li><a href="#"><i class="fas fa-medal"></i>Rewards & Bonuses</a></li>
+                    <li><a href="#"><i class="fas fa-credit-card"></i>Payments</a></li>
+                    <li><a href="#"><i class="fas fa-exclamation-triangle"></i>Report an Hazard</a></li>
+                    <li><a href="#"><i class="far fa-question-circle"></i>About</a></li>
+                    <h4>Vendor options</h4>
+                    <li><a href="./form.html"><i class="fas fa-plus-circle"></i>Add new
+                            Scooter</a>
+                    </li>
+                    <li><a href="./vendor_list.html" class="space_down"><i
+                                class="fas fa-user-check"></i>My inventory</a></li>
+
+
+                </ul>
+            </nav>
+
+        </aside>
+
+    </div>
+    <footer class="site-footer">
+        <div class="footer_about">
+            <a href="./LandingPage.html" class="title">SafeRide</a>
+            <a href="./Login.html" class="aboutUs">About Us</a>
+        </div>
+        <div class="footer_icons">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by Yarin & Niv</p>
+            <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script src="includes/js/srctipts.js"></script>
+
+</html>
