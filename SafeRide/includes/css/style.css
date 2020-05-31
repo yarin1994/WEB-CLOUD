@@ -511,7 +511,7 @@ input[type="radio"]
       }
       .toggle a {
         font-size: 40px;
-        color: black;
+        color: white;
         margin:60%
       }
       .toggle .fa:before {
