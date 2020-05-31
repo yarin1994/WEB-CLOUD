@@ -73,21 +73,21 @@ h4{
 }
 
 /*-------------------------------------INDEX PAGE-----------------------------------------------------*/
-#wind{
+.wind{
     background-image: url('../images/wind.png');
     background-repeat: no-repeat;
     background-position: center; 
     border: none;
     height: 55px;
 }
-#lime{
+.lime{
     background-image: url('../images/lime.png');
     background-repeat: no-repeat;
     background-position: center; 
     border: none;
     height: 55px;
 }
-#bird{
+.bird{
     background-image: url('../images/bird.png');
     background-repeat: no-repeat;
     background-position: center; 

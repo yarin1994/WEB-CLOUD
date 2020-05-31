@@ -12,7 +12,7 @@
       return;
 
     for (i = 0; i < 6; i++) {
-      $(cards).append(" <div class='col-lg-4 col-md-3 col-sm-6'><div class='bodycard'><div id='bird'><button onclick='myFunction()' class='dropbtn'><i class='fas fa-ellipsis-v'></i></button><div id='myDropdown' class='dropdown-content'><a href='#'>Edit</a><a href='#'>Delete</a></div></div></div><ul class='list-group list-group-flush'>");
+      $(cards).append(" <div class='col-lg-4 col-md-3 col-sm-6'><div class='bodycard'><div class='bird'><button onclick='myFunction()' class='dropbtn'><i class='fas fa-ellipsis-v'></i></button><div id='myDropdown' class='dropdown-content'><a href='#'>Edit</a><a href='#'>Delete</a></div></div></div><ul class='list-group list-group-flush'>");
       $(cards).append("</ul></div></div>");
 
       var body_card = document.getElementsByClassName('bodycard');
